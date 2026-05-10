@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vantix Roleplay Portal</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-glow"></div>
+
+  <div class="container">
+    <div class="header">
+      <h1>Vantix Roleplay</h1>
+      <p>Operations Portal</p>
+    </div>
+
+    <div class="portal-grid">
+      <a class="portal-card" href="generator.html">
+        <h2>Callsign Generator</h2>
+        <p>Create Y-#### unit identifiers for all departments</p>
+      </a>
+
+      <a class="portal-card" href="#">
+        <h2>CAD System</h2>
+        <p>Dispatch & unit management (coming soon)</p>
+      </a>
+
+      <a class="portal-card" href="#">
+        <h2>Department Rules</h2>
+        <p>Policies, SOPs, and roleplay guidelines</p>
+      </a>
+
+      <a class="portal-card" href="#">
+        <h2>Discord Hub</h2>
+        <p>Join and manage community access</p>
+      </a>
+    </div>
+  </div>
+
+  <style>
+    .portal-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:20px;
+      margin-top:30px;
+    }
+
+    .portal-card{
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:20px;
+      padding:25px;
+      text-decoration:none;
+      color:white;
+      transition:0.25s;
+      backdrop-filter:blur(10px);
+    }
+
+    .portal-card:hover{
+      transform:scale(1.03);
+      border-color:#00bfff;
+      box-shadow:0 0 25px rgba(0,191,255,0.2);
+    }
+
+    .portal-card h2{
+      color:#00bfff;
+      margin-bottom:10px;
+      text-transform:uppercase;
+      letter-spacing:2px;
+    }
+
+    .portal-card p{
+      color:#b0b0b0;
+      font-size:0.9rem;
+      line-height:1.4;
+    }
+
+    @media(max-width:800px){
+      .portal-grid{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+</body>
+</html>
