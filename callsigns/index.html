@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vantix Roleplay Callsign Generator</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-glow"></div>
+
+  <div class="container">
+    <div class="header">
+      <h1>Vantix Roleplay</h1>
+      <p>FiveM Callsign Generator</p>
+    </div>
+
+    <div class="generator-box">
+      <div class="panel">
+        <h2>Generate Callsign</h2>
+
+        <label>Officer Name</label>
+        <input type="text" id="officerName" placeholder="Enter RP Name">
+
+        <label>Department</label>
+        <select id="department">
+          <option>LSPD</option>
+          <option>BCSO</option>
+          <option>SASP</option>
+          <option>SAFR</option>
+          <option>Dispatch</option>
+        </select>
+
+        <button onclick="generateCallsign()">
+          Generate Callsign
+        </button>
+      </div>
+
+      <div class="panel callsign-display">
+        <span>Active Callsign</span>
+
+        <div class="callsign" id="callsign">
+          Y-0000
+        </div>
+
+        <div class="officer" id="officerDisplay">
+          No Officer Selected
+        </div>
+
+        <div class="department" id="departmentDisplay">
+          LSPD
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
