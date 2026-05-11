@@ -20,16 +20,9 @@
       <div class="panel">
         <h2>Generate Callsign</h2>
 
-        <label>Officer Name</label>
-        <input type="text" id="officerName" placeholder="Enter RP Name">
-
         <label>Department</label>
         <select id="department">
-          <option>LSPD</option>
-          <option>BCSO</option>
-          <option>SASP</option>
-          <option>SAFR</option>
-          <option>Dispatch</option>
+          <option>Public Officer</option>
         </select>
 
         <button onclick="generateCallsign()">
@@ -42,10 +35,6 @@
 
         <div class="callsign" id="callsign">
           Y-0000
-        </div>
-
-        <div class="officer" id="officerDisplay">
-          No Officer Selected
         </div>
 
         <div class="department" id="departmentDisplay">
